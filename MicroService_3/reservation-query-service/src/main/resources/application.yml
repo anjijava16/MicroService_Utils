@@ -1,0 +1,24 @@
+axon:
+    eventhandling:
+        processors:
+            queryModel:
+                source: amqpMessageSource
+server:
+    port: 8081
+spring:
+    database:
+        driverClassName: org.postgresql.Driver
+    datasource:
+        password: postgres
+        platform: postgres
+        username: postgres
+        url: jdbc:postgresql://localhost:${DB_PORT:5432}/meetup?currentSchema=public
+    jpa:
+        database: POSTGRESQL
+        show-sql: true
+        generate-ddl: true
+        hibernate:
+          ddl-auto: none
+    rabbitmq:
+        username: myspacenx
+        password: myspacenx

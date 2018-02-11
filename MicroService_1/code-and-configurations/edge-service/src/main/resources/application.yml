@@ -1,0 +1,13 @@
+spring:
+  application:
+    name: edge-service
+  cloud:
+    config:
+      uri: http://localhost:8888
+zuul:
+  prefix: /api
+  routes:
+    product-service:
+        path: /products/**
+        service-id: product-service
+        strip-prefix: false
