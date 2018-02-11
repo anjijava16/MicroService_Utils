@@ -1,0 +1,155 @@
+CQRS
+Event Sourcing
+
+Client --> API -->Service--->DataRepos--> DB
+
+Read VS Writes
+
+Reads more 
+
+
+Events Source Addressing 
+
+EVENTS Stores into the Event Stores 
+
+ReadOnly Models
+
+Synchnorous Flow 
+
+Companstions Operations
+
+Sagas  (EVent Sources)
+
+http://microservices.io/patterns/data/saga.html
+
+CQRS: Command Query Responsibility Segregation 
+We can use with out Event Sourcing
+
+We can use with Event sourcing
+
+
+Neo4j: Read Stores 
+
+Redios: Read Stores 
+
+
+Elastic Search : Full text search 
+
+API====> 
+
+Event Handler===> Elastic Search
+
+http://www.axonframework.org/
+
+http://www.baeldung.com/axon-cqrs-event-sourcing
+
+Audio==>Event DataSouce
+Transaction===>Querys
+
+
+Lamba (setter ,getter,hashcode)
+
+
+
+@RestControoler
+public static class RoomResseravationAPI{
+
+}
+
+
+@Data ===>Lamba 
+@Entity
+
+
+@Aggregate
+@AggregateIdentifier
+
+ 
+Evebt Sourcing Hander : For Bring the state  of the application
+EventHandler :  Query Part RDBMS 
+
+Exchange ---> queue
+
+Queue ---> One message --> One Consumer
+
+
+Default EventBus ==> RabitMQ
+
+Docker:  Developing,Shipping,And Rujnning
+
+Docker Platfomr=Docker Engine + Docker Hub
+
+
+Docker Client
+
+
+docker build
+docker pull
+docker run
+
+
+
+Docker Host
+Continner
+Images
+
+
+
+docker run ubuntu echo Hello World
+docker images [-a]
+docker ps -a
+
+
+Images  : Persistated snapShot that can be run 
+  images
+  run 
+  tag
+  pull 
+  rmi
+
+Container : Runnable Instance of an Image 
+
+
+Services
+
+Docker Hub
+
+Docker Compose 
+
+Docker Swarm: A Swarm is a group of machines that are running Docker and joined into a cluster
+
+Docker Stack: A stack is a group of interrelated Services that share dependenices and can be orchesed
+
+
+docker images
+docker image -ls
+docker image build -t test test-service
+
+docker image build
+
+docker ps
+
+docker run <<ImageID>> -p 8888:8888
+
+docker build -t config-repo .
+docker run config-repo 
+docker run config-repo  
+
+docker i -t
+
+docker exec -i -t ImageID pwd
+
+docker ps
+
+
+
+
+
+
+
+
+
+
+
+
+
